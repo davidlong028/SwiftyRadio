@@ -17,7 +17,7 @@ var swiftyRadio: SwiftyRadio = SwiftyRadio()
 Include the following code in `viewDidLoad()`
 ```swift
 // Initialize SwiftyRadio
-swiftyRadio.setup("TRIAL")
+swiftyRadio.setup()
 	
 // Setup the station
 swiftyRadio.setStation("WTSQ 88.1FM", URL: "http://stream.wtsq.org:8000/xstream2")

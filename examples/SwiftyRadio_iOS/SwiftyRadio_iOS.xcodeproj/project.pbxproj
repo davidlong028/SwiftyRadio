@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3682D6D61D4BB2D2000BB1F0 /* SwiftyRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3682D6D51D4BB2D2000BB1F0 /* SwiftyRadio.swift */; };
+		36A8963C1D4AC23900BBAD37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8963B1D4AC23900BBAD37 /* AppDelegate.swift */; };
+		36A8963E1D4AC23900BBAD37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8963D1D4AC23900BBAD37 /* ViewController.swift */; };
+		36A896411D4AC23900BBAD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A8963F1D4AC23900BBAD37 /* Main.storyboard */; };
+		36A896431D4AC23900BBAD37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A896421D4AC23900BBAD37 /* Assets.xcassets */; };
+		36A896461D4AC23900BBAD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A896441D4AC23900BBAD37 /* LaunchScreen.storyboard */; };
+		36A896511D4AC23900BBAD37 /* SwiftyRadio_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A896501D4AC23900BBAD37 /* SwiftyRadio_iOSTests.swift */; };
+		36A8965C1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8965B1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36A8964D1D4AC23900BBAD37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36A896301D4AC23900BBAD37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36A896371D4AC23900BBAD37;
+			remoteInfo = SwiftyRadio_iOS;
+		};
+		36A896581D4AC23900BBAD37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36A896301D4AC23900BBAD37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36A896371D4AC23900BBAD37;
+			remoteInfo = SwiftyRadio_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36A8966C1D4AC24600BBAD37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3682D6D51D4BB2D2000BB1F0 /* SwiftyRadio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyRadio.swift; path = ../../../SwiftyRadio.swift; sourceTree = "<group>"; };
+		36A896381D4AC23900BBAD37 /* SwiftyRadio_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyRadio_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A8963B1D4AC23900BBAD37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36A8963D1D4AC23900BBAD37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36A896401D4AC23900BBAD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36A896421D4AC23900BBAD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36A896451D4AC23900BBAD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36A896471D4AC23900BBAD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A8964C1D4AC23900BBAD37 /* SwiftyRadio_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyRadio_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A896501D4AC23900BBAD37 /* SwiftyRadio_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyRadio_iOSTests.swift; sourceTree = "<group>"; };
+		36A896521D4AC23900BBAD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36A896571D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyRadio_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A8965B1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyRadio_iOSUITests.swift; sourceTree = "<group>"; };
+		36A8965D1D4AC23900BBAD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36A896351D4AC23900BBAD37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A896491D4AC23900BBAD37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A896541D4AC23900BBAD37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36A8962F1D4AC23900BBAD37 = {
+			isa = PBXGroup;
+			children = (
+				36A8963A1D4AC23900BBAD37 /* SwiftyRadio_iOS */,
+				36A8964F1D4AC23900BBAD37 /* SwiftyRadio_iOSTests */,
+				36A8965A1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests */,
+				36A896391D4AC23900BBAD37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36A896391D4AC23900BBAD37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36A896381D4AC23900BBAD37 /* SwiftyRadio_iOS.app */,
+				36A8964C1D4AC23900BBAD37 /* SwiftyRadio_iOSTests.xctest */,
+				36A896571D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36A8963A1D4AC23900BBAD37 /* SwiftyRadio_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				36A8963B1D4AC23900BBAD37 /* AppDelegate.swift */,
+				36A8963D1D4AC23900BBAD37 /* ViewController.swift */,
+				3682D6D51D4BB2D2000BB1F0 /* SwiftyRadio.swift */,
+				36A8963F1D4AC23900BBAD37 /* Main.storyboard */,
+				36A896421D4AC23900BBAD37 /* Assets.xcassets */,
+				36A896441D4AC23900BBAD37 /* LaunchScreen.storyboard */,
+				36A896471D4AC23900BBAD37 /* Info.plist */,
+			);
+			path = SwiftyRadio_iOS;
+			sourceTree = "<group>";
+		};
+		36A8964F1D4AC23900BBAD37 /* SwiftyRadio_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				36A896501D4AC23900BBAD37 /* SwiftyRadio_iOSTests.swift */,
+				36A896521D4AC23900BBAD37 /* Info.plist */,
+			);
+			path = SwiftyRadio_iOSTests;
+			sourceTree = "<group>";
+		};
+		36A8965A1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36A8965B1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.swift */,
+				36A8965D1D4AC23900BBAD37 /* Info.plist */,
+			);
+			path = SwiftyRadio_iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36A896371D4AC23900BBAD37 /* SwiftyRadio_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36A896601D4AC23900BBAD37 /* Build configuration list for PBXNativeTarget "SwiftyRadio_iOS" */;
+			buildPhases = (
+				36A896341D4AC23900BBAD37 /* Sources */,
+				36A896351D4AC23900BBAD37 /* Frameworks */,
+				36A896361D4AC23900BBAD37 /* Resources */,
+				36A8966C1D4AC24600BBAD37 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyRadio_iOS;
+			productName = SwiftyRadio_iOS;
+			productReference = 36A896381D4AC23900BBAD37 /* SwiftyRadio_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36A8964B1D4AC23900BBAD37 /* SwiftyRadio_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36A896631D4AC23900BBAD37 /* Build configuration list for PBXNativeTarget "SwiftyRadio_iOSTests" */;
+			buildPhases = (
+				36A896481D4AC23900BBAD37 /* Sources */,
+				36A896491D4AC23900BBAD37 /* Frameworks */,
+				36A8964A1D4AC23900BBAD37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36A8964E1D4AC23900BBAD37 /* PBXTargetDependency */,
+			);
+			name = SwiftyRadio_iOSTests;
+			productName = SwiftyRadio_iOSTests;
+			productReference = 36A8964C1D4AC23900BBAD37 /* SwiftyRadio_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36A896561D4AC23900BBAD37 /* SwiftyRadio_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36A896661D4AC23900BBAD37 /* Build configuration list for PBXNativeTarget "SwiftyRadio_iOSUITests" */;
+			buildPhases = (
+				36A896531D4AC23900BBAD37 /* Sources */,
+				36A896541D4AC23900BBAD37 /* Frameworks */,
+				36A896551D4AC23900BBAD37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36A896591D4AC23900BBAD37 /* PBXTargetDependency */,
+			);
+			name = SwiftyRadio_iOSUITests;
+			productName = SwiftyRadio_iOSUITests;
+			productReference = 36A896571D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36A896301D4AC23900BBAD37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eric Conner Apps";
+				TargetAttributes = {
+					36A896371D4AC23900BBAD37 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					36A8964B1D4AC23900BBAD37 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 36A896371D4AC23900BBAD37;
+					};
+					36A896561D4AC23900BBAD37 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 36A896371D4AC23900BBAD37;
+					};
+				};
+			};
+			buildConfigurationList = 36A896331D4AC23900BBAD37 /* Build configuration list for PBXProject "SwiftyRadio_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36A8962F1D4AC23900BBAD37;
+			productRefGroup = 36A896391D4AC23900BBAD37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36A896371D4AC23900BBAD37 /* SwiftyRadio_iOS */,
+				36A8964B1D4AC23900BBAD37 /* SwiftyRadio_iOSTests */,
+				36A896561D4AC23900BBAD37 /* SwiftyRadio_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36A896361D4AC23900BBAD37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A896461D4AC23900BBAD37 /* LaunchScreen.storyboard in Resources */,
+				36A896431D4AC23900BBAD37 /* Assets.xcassets in Resources */,
+				36A896411D4AC23900BBAD37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A8964A1D4AC23900BBAD37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A896551D4AC23900BBAD37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36A896341D4AC23900BBAD37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3682D6D61D4BB2D2000BB1F0 /* SwiftyRadio.swift in Sources */,
+				36A8963E1D4AC23900BBAD37 /* ViewController.swift in Sources */,
+				36A8963C1D4AC23900BBAD37 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A896481D4AC23900BBAD37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A896511D4AC23900BBAD37 /* SwiftyRadio_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A896531D4AC23900BBAD37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A8965C1D4AC23900BBAD37 /* SwiftyRadio_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36A8964E1D4AC23900BBAD37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36A896371D4AC23900BBAD37 /* SwiftyRadio_iOS */;
+			targetProxy = 36A8964D1D4AC23900BBAD37 /* PBXContainerItemProxy */;
+		};
+		36A896591D4AC23900BBAD37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36A896371D4AC23900BBAD37 /* SwiftyRadio_iOS */;
+			targetProxy = 36A896581D4AC23900BBAD37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36A8963F1D4AC23900BBAD37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36A896401D4AC23900BBAD37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36A896441D4AC23900BBAD37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36A896451D4AC23900BBAD37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36A8965E1D4AC23900BBAD37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36A8965F1D4AC23900BBAD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36A896611D4AC23900BBAD37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SwiftyRadio_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericconnerapps.SwiftyRadio-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36A896621D4AC23900BBAD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SwiftyRadio_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericconnerapps.SwiftyRadio-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		36A896641D4AC23900BBAD37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftyRadio_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericconnerapps.SwiftyRadio-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyRadio_iOS.app/SwiftyRadio_iOS";
+			};
+			name = Debug;
+		};
+		36A896651D4AC23900BBAD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftyRadio_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericconnerapps.SwiftyRadio-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyRadio_iOS.app/SwiftyRadio_iOS";
+			};
+			name = Release;
+		};
+		36A896671D4AC23900BBAD37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftyRadio_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericconnerapps.SwiftyRadio-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftyRadio_iOS;
+			};
+			name = Debug;
+		};
+		36A896681D4AC23900BBAD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftyRadio_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ericconnerapps.SwiftyRadio-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftyRadio_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36A896331D4AC23900BBAD37 /* Build configuration list for PBXProject "SwiftyRadio_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A8965E1D4AC23900BBAD37 /* Debug */,
+				36A8965F1D4AC23900BBAD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36A896601D4AC23900BBAD37 /* Build configuration list for PBXNativeTarget "SwiftyRadio_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A896611D4AC23900BBAD37 /* Debug */,
+				36A896621D4AC23900BBAD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36A896631D4AC23900BBAD37 /* Build configuration list for PBXNativeTarget "SwiftyRadio_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A896641D4AC23900BBAD37 /* Debug */,
+				36A896651D4AC23900BBAD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36A896661D4AC23900BBAD37 /* Build configuration list for PBXNativeTarget "SwiftyRadio_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36A896671D4AC23900BBAD37 /* Debug */,
+				36A896681D4AC23900BBAD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36A896301D4AC23900BBAD37 /* Project object */;
+}
