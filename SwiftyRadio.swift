@@ -3,7 +3,7 @@
 //  Swifty Radio
 //  A simple and easy way to build streaming radio apps for iOS, tvOS, & macOS
 //
-//  Version 1.2.0
+//  Version 1.2.1
 //  Created by Eric Conner on 7/9/16.
 //  Copyright © 2016 Eric Conner Apps. All rights reserved.
 //
@@ -193,8 +193,8 @@ public class SwiftyRadio: NSObject {
 //*****************************************************************
 // MARK: - Notification Functions
 //*****************************************************************
-	/// Called when new song metadata is available
 	override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+		/// Called when the player item status changes
 		if keyPath == "status" {
 			if PlayerItem.status == AVPlayerItemStatus.Failed {
 				pause()
@@ -203,6 +203,7 @@ public class SwiftyRadio: NSObject {
 			}
 		}
 		
+		/// Called when new song metadata is available
 		if keyPath == "timedMetadata" {
 			if(PlayerItem.timedMetadata != nil && PlayerItem.timedMetadata!.count > 0) {
 				let metaData = PlayerItem.timedMetadata!.first!.value as! String
