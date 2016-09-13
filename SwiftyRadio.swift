@@ -1,9 +1,9 @@
 //
 //  SwiftyRadio.swift
 //  Swifty Radio
-//  A simple and easy way to build streaming radio apps for iOS, tvOS, & macOS
+//  Simple and easy way to build streaming radio apps for iOS, tvOS, & macOS
 //
-//  Version 1.2.1
+//  Version 1.2.3
 //  Created by Eric Conner on 7/9/16.
 //  Copyright © 2016 Eric Conner Apps. All rights reserved.
 //
@@ -15,7 +15,7 @@ import AVFoundation
 	import MediaPlayer
 #endif
 
-/// A simple and easy way to build a streaming radio app for iOS, tvOS, & macOS
+/// Simple and easy way to build streaming radio apps for iOS, tvOS, & macOS
 public class SwiftyRadio: NSObject {
 
 //*****************************************************************
@@ -36,7 +36,7 @@ public class SwiftyRadio: NSObject {
 		var name: String = ""
 		var URL: String = ""
 		var shortDesc: String = ""
-		var albumArt: String = ""
+		var albumArt: UIImage = UIImage()
 	}
 
 
@@ -65,7 +65,7 @@ public class SwiftyRadio: NSObject {
 	/// - parameter URL: The station URL
 	/// - parameter shortDesc: A short description of the station **(Not required)**
 	/// - parameter albumArt: Name of image to display as album art **(Not required)**
-	public func setStation(stationName: String, URL: String, shortDesc: String = "", albumArt: String = "") {
+	public func setStation(stationName: String, URL: String, shortDesc: String = "", albumArt: UIImage = UIImage()) {
 		stationInfo = StationInfo(name: stationName, URL: URL, shortDesc: shortDesc, albumArt: albumArt)
 	}
 
@@ -93,18 +93,22 @@ public class SwiftyRadio: NSObject {
 
 	/// Plays the current set station. Uses notification `SwiftyRadioPlayWasPressed`
 	public func play() {
-		if !isPlaying() {
-			PlayerItem = AVPlayerItem(URL: NSURL(string: stationInfo.URL)!)
-			PlayerItem.addObserver(self, forKeyPath: "timedMetadata", options: NSKeyValueObservingOptions.New, context: nil)
-			PlayerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: nil)
-			
-			Player = AVPlayer(playerItem: PlayerItem)
-			Player.play()
-			
-			track.isPlaying = true
-			NSNotificationCenter.defaultCenter().postNotificationName("SwiftyRadioPlayWasPressed", object: nil)
+		if stationInfo.URL != "" {
+			if !isPlaying() {
+				PlayerItem = AVPlayerItem(URL: NSURL(string: stationInfo.URL)!)
+				PlayerItem.addObserver(self, forKeyPath: "timedMetadata", options: NSKeyValueObservingOptions.New, context: nil)
+				PlayerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: nil)
+				
+				Player = AVPlayer(playerItem: PlayerItem)
+				Player.play()
+				
+				track.isPlaying = true
+				NSNotificationCenter.defaultCenter().postNotificationName("SwiftyRadioPlayWasPressed", object: nil)
+			} else {
+				print("ERROR: SwiftyRadio is already playing")
+			}
 		} else {
-			print("ERROR: SwiftyRadio is already playing")
+			print("ERROR: Station has not been setup")
 		}
 	}
 
@@ -142,10 +146,7 @@ public class SwiftyRadio: NSObject {
 			track.artist = stationInfo.name
 		}
 
-		#if os(iOS)
-			updateLockScreen()
-		#endif
-		
+		updateLockScreen()
 		NSNotificationCenter.defaultCenter().postNotificationName("SwiftyRadioMetadataUpdated", object: nil)
 	}
 
@@ -153,8 +154,7 @@ public class SwiftyRadio: NSObject {
 	private func updateLockScreen() {
 		#if os(iOS)
 			if stationInfo.albumArt != "" {
-				let artwork = UIImage(named: stationInfo.albumArt)
-				let albumArtwork = MPMediaItemArtwork(image: artwork!)
+				let albumArtwork = MPMediaItemArtwork(image: stationInfo.albumArt)
 				MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [
 					MPMediaItemPropertyArtist: track.artist,
 					MPMediaItemPropertyTitle: track.title,
@@ -179,6 +179,13 @@ public class SwiftyRadio: NSObject {
 			NSUserNotificationCenter.defaultUserNotificationCenter().removeAllDeliveredNotifications()
 			NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
 		#endif
+	}
+	
+	/// Update the now playing artwork
+	/// - parameter imageName: Name of image to display as album art
+	public func updateArtwork(imageName: UIImage) {
+		stationInfo.albumArt = imageName
+		updateLockScreen()
 	}
 	
 	/// Removes special characters from a text string
@@ -219,9 +226,9 @@ public class SwiftyRadio: NSObject {
 
 				// Set artist to the station name if it is blank or unknown
 				switch metadataParts[0] {
-				case "", "Unknown", "unknown":
+					case "", "Unknown", "unknown":
 					track.artist = stationInfo.name
-				default:
+					default:
 					track.artist = metadataParts[0]
 				}
 

@@ -1,11 +1,8 @@
 # SwiftyRadio #
-A simple and easy way to build streaming radio apps for iOS, tvOS, & macOS.
+Simple and easy way to build streaming radio apps for iOS, tvOS, & macOS.
 
 ## Installation ##
 SwiftyRadio can be installed by simply adding the SwiftyRadio.swift file to your project.
-
-## Swift 3 ##
-For those using Xcode 8 and Swift 3, there will be a swift-3 branch of SwiftyRadio available soon. It will be merged to master once Swift 3 exits beta later this year.
 
 ## Usage ##
 In AppDelegate.swift add the following code after imports and before `@UIApplicationMain`.
